@@ -2,7 +2,11 @@
 
 ## Welcome! 👋
 
+## Desktop Desgin
 ![Design preview for the 3-column preview card component coding challenge](./design/desktop-preview.jpg)
+
+## Mobile-Design
+![Design preview for the 3-column preview card component coding challenge](./design/mobile-design.jpg)
 
 # Front-end Style Guide
 
