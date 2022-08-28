@@ -1,0 +1,150 @@
+@import url('https://fonts.googleapis.com/css2?family=Big+Shoulders+Display:wght@700');
+@import url('https://fonts.googleapis.com/css2?family=Lexend+Deca:wght@100;200;300;400;500;600;700;800;900&display=swap');
+
+* {
+      padding: 0;
+      margin: 0;
+      box-sizing: 0;
+}
+
+:root {
+      --font-name: 'Big Shoulders Display', cursive;
+      --second-font: font-family: 'Lexend Deca', sans-serif;
+      ;
+      --background-color: hsl(0, 0%, 95%);
+      --radius: 10px;
+      --first-card-color: hsl(31, 77%, 52%);
+      --second-card-color: hsl(184, 100%, 22%);
+      --third-card-color: hsl(179, 100%, 13%);
+}
+
+/* ----------------------------------------------------------------------- */
+.container {
+      display: flex;
+      flex-direction: row;
+      font-family: var(--font-name);
+      align-content: center;
+      height: 100vh;
+      overflow: hidden;
+      align-items: center;
+      justify-content: center;
+      background-color: var(--background-color);
+      font-size: 15px
+}
+
+.card {
+      padding: 2.5em;
+      width: 240px;
+      height: 400px;
+      display: flex;
+      flex-direction: column;
+      justify-content: space-between;
+}
+
+.card img {
+      height: 40px;
+      width: 70px;
+}
+
+.card h1 {
+      color: var(--background-color);
+      font-size: 3.5em;
+      font-weight: 700px;
+}
+
+.card p {
+      font-family: var(--second-font);
+      font-weight: 100px;
+      color: var(--background-color);
+      line-height: 1.8em;
+      white-space: 1.8em;
+}
+
+.card button {
+      font-family: var(--second-font);
+      font-size: 15px;
+      letter-spacing: 0.1em;
+      font-weight: 300;
+      padding: 15px;
+      border-radius: 20px;
+      border: none;
+      width: 65%;
+}
+
+/* ----------------------------------------------------------------------- */
+/* card 1 */
+.card.Sedans {
+      background-color: var(--first-card-color);
+      border-top-left-radius: var(--radius);
+      border-bottom-left-radius: var(--radius);
+}
+
+.card.Sedans button {
+      color: var(--first-card-color);
+}
+
+.card.Sedans button:hover {
+      border: 2px var(--background-color) solid;
+      color: var(--background-color);
+      background-color: transparent;
+}
+
+/* end card 1 */
+/* ----------------------------------------------------------------------- */
+/* card 2 */
+.card.Suvs {
+      background-color: var(--second-card-color);
+}
+
+.card.Suvs button {
+      color: var(--second-card-color);
+}
+
+.card.Suvs button:hover {
+      border: 2px var(--background-color) solid;
+      color: var(--background-color);
+      background-color: transparent;
+}
+
+/* end card 2 */
+/* ----------------------------------------------------------------------- */
+/* card 3 */
+.card.Luxury {
+      background-color: var(--third-card-color);
+      border-top-right-radius: var(--radius);
+      border-bottom-right-radius: var(--radius);
+}
+
+.card.Luxury button {
+      color: var(--third-card-color);
+}
+
+.card.Luxury button:hover {
+      border: 2px var(--background-color) solid;
+      color: var(--background-color);
+      background-color: transparent;
+}
+
+/* end card 3 */
+/* ----------------------------------------------------------------------- */
+@media (max-width: 375px) {
+      .container {
+            height: 0%;
+            padding: 1.5em;
+            flex-direction: column;
+            justify-content: flex-start;
+            align-items: flex-start;
+      }
+
+      .card.Sedans {
+            border-top-left-radius: var(--radius);
+            border-top-right-radius: var(--radius);
+            border-bottom-left-radius: 0px;
+      }
+
+      .card.Luxury {
+            border-bottom-left-radius: var(--radius);
+            border-bottom-right-radius: var(--radius);
+            border-top-right-radius: 0px;
+      }
+}
