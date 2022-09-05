@@ -9,7 +9,7 @@
 
 :root {
       --font-name: 'Big Shoulders Display', cursive;
-      --second-font: font-family: 'Lexend Deca', sans-serif;
+      --second-font: 'Lexend Deca', sans-serif;
       ;
       --background-color: hsl(0, 0%, 95%);
       --radius: 10px;
